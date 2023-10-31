@@ -1,0 +1,201 @@
+:root {
+  --yellow: #f8e16c;
+  --green: #06a04b;
+  --deepgreen: #156064;
+  --red: #e75019;
+  --pink: #ffc2b4;
+  --white: #fff;
+  --black: #0000009f;
+  --background: #ffffffe3;
+  --gray: #f8f8ed;
+}
+
+body {
+  width: 100%;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-1 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../Images/goma_kivu_congo_drc_street_un_vehicles_africa_2019_shutterstock_1383893549.jpg");
+}
+
+header .empty-content {
+  width: 100%;
+  padding: 30px;
+  background-color: var(--yellow);
+}
+header .header-content {
+  width: 90%;
+  margin: auto;
+  margin-top: -25px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--deepgreen);
+}
+header .header-content .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+header .header-content .logo i {
+  padding: 10px;
+  border-radius: 50%;
+  color: var(--deepgreen);
+  background-color: var(--yellow);
+}
+header .header-content .logo h4 {
+  color: var(--white);
+}
+header .header-content .logo h4 span {
+  color: var(--yellow);
+}
+header .header-content .header-items ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+header .header-content .header-items ul a {
+  color: var(--white);
+}
+header .header-content .header-items ul a:hover {
+  color: var(--yellow);
+  transition: 1s;
+}
+header .header-content .header-items ul .accueil {
+  color: var(--yellow);
+  border-bottom: 2px solid var(--yellow);
+}
+
+.cover-page {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.cover-page div {
+  color: var(--white);
+}
+.cover-page div h2, .cover-page div p, .cover-page div button {
+  margin-top: 15px;
+}
+
+section .salamacontrol {
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+}
+section .salamacontrol h3 {
+  color: var(--deepgreen);
+}
+section .salamacontrol h4 {
+  width: 130px;
+  margin-top: 5px;
+  border-bottom: 3px solid var(--yellow);
+}
+section .salamacontrol p {
+  margin-top: 10px;
+}
+section .salamacontrol p i {
+  font-size: 30px;
+  font-style: italic;
+  color: var(--green);
+}
+
+.avantages {
+  padding: 20px;
+  background-color: var(--gray);
+}
+.avantages .avantages-items {
+  width: 70%;
+  margin: auto;
+}
+.avantages .avantages-items h3 {
+  color: var(--deepgreen);
+}
+.avantages .avantages-items h4 {
+  width: 130px;
+  margin-top: 8px;
+  border-bottom: 3px solid var(--yellow);
+}
+.avantages .avantages-items .avantages-content {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.avantages .avantages-items .avantages-content p {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px var(--deepgreen);
+}
+
+footer {
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  justify-content: space-between;
+  background-color: var(--deepgreen);
+}
+footer div a {
+  color: var(--white);
+}
+footer div i {
+  border-radius: 50%;
+  padding: 10px;
+  color: var(--deepgreen);
+  background-color: var(--yellow);
+}
+
+*,
+::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.connecter, .know-more {
+  padding: 10px 15px;
+  background-color: var(--deepgreen);
+  border: 2px solid var(--deepgreen);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+}
+.connecter a, .know-more a {
+  color: var(--yellow);
+}
+.connecter:hover, .know-more:hover {
+  background-color: var(--yellow);
+  border: 2px solid var(--yellow);
+  transition: 1s;
+}
+.connecter:hover a, .know-more:hover a {
+  color: var(--deepgreen);
+}
+
+.know-more {
+  background: none;
+  border: 2px solid var(--yellow);
+}/*# sourceMappingURL=accueil.css.map */
