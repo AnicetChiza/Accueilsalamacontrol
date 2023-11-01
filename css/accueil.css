@@ -33,13 +33,15 @@ header .empty-content {
 }
 header .header-content {
   width: 90%;
-  margin-top: 25px;
   padding: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   z-index: 10;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: var(--deepgreen);
 }
 header .header-content .logo {
@@ -275,6 +277,7 @@ footer .top {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 a {
