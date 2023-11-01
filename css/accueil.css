@@ -80,7 +80,7 @@ header .header-content .header-items ul .accueil {
 }
 
 .cover-page {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -135,20 +135,24 @@ section .salamacontrol .salamacontrol-content p i {
   margin-bottom: 10px;
   border-bottom: 3px solid var(--yellow);
 }
-.fonctionnalite .fontionnalite-content {
-  display: grid;
-  gap: 15px;
-  grid-template-columns: 1fr 1fr;
+.fonctionnalite .fontionnalite-content .bureau-side h5 {
+  font-weight: bolder;
+  color: var(--deepgreen);
 }
-.fonctionnalite .fontionnalite-content div {
+.fonctionnalite .fontionnalite-content .bureau-side .bureau-side-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 10px;
+}
+.fonctionnalite .fontionnalite-content .bureau-side .bureau-side-content div {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
-.fonctionnalite .fontionnalite-content div span {
+.fonctionnalite .fontionnalite-content .bureau-side .bureau-side-content div span {
   width: 30px;
   height: 30px;
-  padding: 10px 15px;
   border-radius: 100%;
   background: linear-gradient(45deg, var(--deepgreen), var(--yellow));
 }
