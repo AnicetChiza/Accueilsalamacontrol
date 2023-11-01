@@ -28,15 +28,18 @@ header .empty-content {
   width: 100%;
   padding: 30px;
   background-color: var(--yellow);
+  position: fixed;
+  z-index: 10;
 }
 header .header-content {
   width: 90%;
-  margin: auto;
-  margin-top: -25px;
+  margin-top: 25px;
   padding: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  z-index: 10;
   background-color: var(--deepgreen);
 }
 header .header-content .logo {
@@ -254,7 +257,13 @@ footer .top {
   width: fit-content;
   padding: 10px 10px;
   color: var(--white);
-  background: linear-gradient(45deg, var(--deepgreen), var(--yellow));
+  position: fixed;
+  right: 0;
+  bottom: 60px;
+  cursor: pointer;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: linear-gradient(60deg, var(--deepgreen), var(--yellow));
 }
 
 *,
