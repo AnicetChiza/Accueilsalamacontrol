@@ -109,6 +109,21 @@ section{
         }
     }
 }
+//Les fonctionalites de Salama Control
+.fonctionnalite{
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    h3{
+        color: var(--deepgreen);
+    }
+    h4{
+        width: 80px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-bottom: 3px solid var(--yellow);
+    }
+}
 //Les avantages de Salama Control
 .avantages{
     padding: 20px;
@@ -151,6 +166,46 @@ section{
         margin-bottom: 10px;
         border-bottom: 3px solid var(--yellow);
     }
+}
+
+//Boite de suggestion
+.suggestion{
+    //background-size: cover;
+    //background-repeat: no-repeat;
+    //background-position: center;
+    background-image: url(../../Images/suggestion.jpg);
+    .suggestion-content{
+        width: 70%;
+        margin: auto;
+        padding: 20px;
+        h3{
+            text-align: center;
+            color: var(--deepgreen);
+        }
+        h4{
+            width: 70px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--yellow);
+        }
+        p{
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bolder;
+            color: var(--deepgreen);
+        }
+        div{
+            text-align: center;
+            a{
+                padding: 8px 12px;
+                color: var(--white);
+                border-radius: 4px;
+                background: linear-gradient(45deg, var(--deepgreen), var(--yellow));
+            }
+        }
+    }
+
 }
 
 //Le footer de notre page qui contient deux blocs

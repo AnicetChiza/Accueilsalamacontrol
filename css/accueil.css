@@ -111,6 +111,21 @@ section .salamacontrol p i {
   color: var(--green);
 }
 
+.fonctionnalite {
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+}
+.fonctionnalite h3 {
+  color: var(--deepgreen);
+}
+.fonctionnalite h4 {
+  width: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid var(--yellow);
+}
+
 .avantages {
   padding: 20px;
   background-color: var(--gray);
@@ -152,6 +167,41 @@ section .salamacontrol p i {
   margin-top: 10px;
   margin-bottom: 10px;
   border-bottom: 3px solid var(--yellow);
+}
+
+.suggestion {
+  background-image: url(../../Images/suggestion.jpg);
+}
+.suggestion .suggestion-content {
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+}
+.suggestion .suggestion-content h3 {
+  text-align: center;
+  color: var(--deepgreen);
+}
+.suggestion .suggestion-content h4 {
+  width: 70px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid var(--yellow);
+}
+.suggestion .suggestion-content p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  color: var(--deepgreen);
+}
+.suggestion .suggestion-content div {
+  text-align: center;
+}
+.suggestion .suggestion-content div a {
+  padding: 8px 12px;
+  color: var(--white);
+  border-radius: 4px;
+  background: linear-gradient(45deg, var(--deepgreen), var(--yellow));
 }
 
 footer {
