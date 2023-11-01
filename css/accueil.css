@@ -90,22 +90,25 @@ header .header-content .header-items ul .accueil {
 }
 
 section .salamacontrol {
+  background-image: url(../../Images/fond.jpg);
+}
+section .salamacontrol .salamacontrol-content {
   width: 70%;
   margin: auto;
   padding: 20px;
 }
-section .salamacontrol h3 {
+section .salamacontrol .salamacontrol-content h3 {
   color: var(--deepgreen);
 }
-section .salamacontrol h4 {
+section .salamacontrol .salamacontrol-content h4 {
   width: 130px;
   margin-top: 5px;
   border-bottom: 3px solid var(--yellow);
 }
-section .salamacontrol p {
+section .salamacontrol .salamacontrol-content p {
   margin-top: 10px;
 }
-section .salamacontrol p i {
+section .salamacontrol .salamacontrol-content p i {
   font-size: 30px;
   font-style: italic;
   color: var(--green);
@@ -115,6 +118,8 @@ section .salamacontrol p i {
   width: 70%;
   margin: auto;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .fonctionnalite h3 {
   color: var(--deepgreen);
@@ -124,6 +129,23 @@ section .salamacontrol p i {
   margin-top: 10px;
   margin-bottom: 10px;
   border-bottom: 3px solid var(--yellow);
+}
+.fonctionnalite .fontionnalite-content {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr;
+}
+.fonctionnalite .fontionnalite-content div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.fonctionnalite .fontionnalite-content div span {
+  width: 30px;
+  height: 30px;
+  padding: 10px 15px;
+  border-radius: 100%;
+  background: linear-gradient(45deg, var(--deepgreen), var(--yellow));
 }
 
 .avantages {
@@ -151,7 +173,7 @@ section .salamacontrol p i {
 .avantages .avantages-items .avantages-content p {
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0px 0px 5px 0px var(--deepgreen);
+  box-shadow: 0px 0px 3px 0px var(--deepgreen);
 }
 
 .contact {
@@ -170,7 +192,7 @@ section .salamacontrol p i {
 }
 
 .suggestion {
-  background-image: url(../../Images/suggestion.jpg);
+  background-image: url(../../Images/fond.jpg);
 }
 .suggestion .suggestion-content {
   width: 70%;
@@ -206,20 +228,33 @@ section .salamacontrol p i {
 
 footer {
   padding: 15px 25px;
+  background-color: var(--deepgreen);
+}
+footer .footer-content {
   display: flex;
   align-items: center;
   color: var(--white);
   justify-content: space-between;
-  background-color: var(--deepgreen);
 }
-footer div a {
+footer .footer-content div a {
   color: var(--white);
 }
-footer div i {
+footer .footer-content div i {
   border-radius: 50%;
   padding: 10px;
   color: var(--deepgreen);
   background-color: var(--yellow);
+}
+footer .top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 10px;
+  color: var(--white);
+  background: linear-gradient(45deg, var(--deepgreen), var(--yellow));
 }
 
 *,

@@ -88,23 +88,26 @@ header{
 //Notre section va comporter les contenus de notre systeme Salama Control
 section{
     .salamacontrol{
-        width: 70%;
-        margin: auto;
-        padding: 20px;
-        h3{
-            color: var(--deepgreen);
-        }
-        h4{
-            width: 130px;
-            margin-top: 5px;
-            border-bottom: 3px solid var(--yellow);
-        }
-        p{
-            margin-top: 10px;
-            i{
-                font-size: 30px;
-                font-style: italic;
-                color: var(--green);
+        background-image: url(../../Images/fond.jpg);
+        .salamacontrol-content{
+            width: 70%;
+            margin: auto;
+            padding: 20px;
+            h3{
+                color: var(--deepgreen);
+            }
+            h4{
+                width: 130px;
+                margin-top: 5px;
+                border-bottom: 3px solid var(--yellow);
+            }
+            p{
+                margin-top: 10px;
+                i{
+                    font-size: 30px;
+                    font-style: italic;
+                    color: var(--green);
+                }
             }
         }
     }
@@ -114,6 +117,8 @@ section{
     width: 70%;
     margin: auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
     h3{
         color: var(--deepgreen);
     }
@@ -123,6 +128,24 @@ section{
         margin-bottom: 10px;
         border-bottom: 3px solid var(--yellow);
     }
+    .fontionnalite-content{
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        div{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            span{
+                width: 30px;
+                height: 30px;
+                padding: 10px 15px;
+                border-radius: 100%;
+                background: linear-gradient(45deg, var(--deepgreen), var(--yellow));
+            }
+        }
+    }
+
 }
 //Les avantages de Salama Control
 .avantages{
@@ -147,7 +170,7 @@ section{
             p{
                 padding: 10px;
                 border-radius: 10px;
-                box-shadow: 0px 0px 5px 0px var(--deepgreen);
+                box-shadow: 0px 0px 3px 0px var(--deepgreen);
             }
         }
     }
@@ -170,10 +193,7 @@ section{
 
 //Boite de suggestion
 .suggestion{
-    //background-size: cover;
-    //background-repeat: no-repeat;
-    //background-position: center;
-    background-image: url(../../Images/suggestion.jpg);
+    background-image: url(../../Images/fond.jpg);
     .suggestion-content{
         width: 70%;
         margin: auto;
@@ -211,20 +231,32 @@ section{
 //Le footer de notre page qui contient deux blocs
 footer{
     padding: 15px 25px;
-    display: flex;
-    align-items: center;
-    color: var(--white);
-    justify-content: space-between;
     background-color: var(--deepgreen);
-    div{
-        a{
-            color: var(--white);
+    .footer-content{
+        display: flex;
+        align-items: center;
+        color: var(--white);
+        justify-content: space-between;
+        div{
+            a{
+                color: var(--white);
+            }
+            i{
+                border-radius: 50%;
+                padding: 10px;
+                color: var(--deepgreen);
+                background-color: var(--yellow);
+            }
         }
-        i{
-            border-radius: 50%;
-            padding: 10px;
-            color: var(--deepgreen);
-            background-color: var(--yellow);
-        }
+    }
+    .top{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        width: fit-content;
+        padding: 10px 10px;
+        color: var(--white);
+        background: linear-gradient(45deg, var(--deepgreen), var(--yellow));
     }
 }
