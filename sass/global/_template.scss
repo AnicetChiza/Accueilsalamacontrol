@@ -137,6 +137,21 @@ section{
         }
     }
 }
+//Contactez-nous
+.contact{
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    h3{
+        color: var(--deepgreen);
+    }
+    h4{
+        width: 80px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-bottom: 3px solid var(--yellow);
+    }
+}
 
 //Le footer de notre page qui contient deux blocs
 footer{
