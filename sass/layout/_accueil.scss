@@ -9,7 +9,24 @@
                     display: none;
                 }
                 .menu{
-                    display: initial
+                    display: initial;
+                    .menu-icons .icon{
+                        display: block;
+                        cursor: pointer;
+                    }
+                    .menu-icons .exit{
+                        display: none;
+                        cursor: pointer;
+                    }
+                    .menu-mobile .icon{
+                        display: none;
+                    }
+                    .menu-mobile .exit{
+                        display: initial;
+                    }
+                    .menu-mobile{
+                        margin-top: 0;
+                    }
                 }
             }
         }
