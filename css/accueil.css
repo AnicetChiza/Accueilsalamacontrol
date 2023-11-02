@@ -99,7 +99,7 @@ header .header-content .menu .menu-container {
   height: 50vh;
   transition: 1s;
   margin-top: -200%;
-  z-index: -1;
+  z-index: 5;
   background-color: var(--deepgreen);
   display: flex;
   flex-direction: row;
