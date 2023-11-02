@@ -28,6 +28,7 @@ header{
         width: 90%;
         padding: 15px;
         @include display-flex;
+        justify-content: space-between;
         position: fixed;
         z-index: 10;
         top: 60px;
@@ -35,8 +36,7 @@ header{
         transform: translate(-50%, -50%);
         background-color: var(--deepgreen);
         .logo{
-            gap: 8px;
-            @include display;
+            gap: 8px;@include display-flex;
             justify-content: none;
             i{
                 padding: 10px;
@@ -87,7 +87,7 @@ header{
 //Notre section va comporter les contenus de notre systeme Salama Control
 section{
     .salamacontrol{
-        background-image: url(../../Images/);
+        background-image: url(../../Images/fond.jpg);
         .salamacontrol-content{
             width: 70%;
             margin: auto;
@@ -115,8 +115,7 @@ section{
 .fonctionnalite{
     width: 70%;
     margin: auto;
-    padding: 20px;
-    @include display-grid;
+    padding: 10px;
     h3{
         color: var(--deepgreen);
     }
@@ -232,6 +231,7 @@ footer{
     .footer-content{
         color: var(--white);
         @include display-flex;
+        justify-content: space-between;
         div{
             a{
                 color: var(--white);

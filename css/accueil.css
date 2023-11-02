@@ -38,6 +38,7 @@ header .header-content {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  justify-content: space-between;
   position: fixed;
   z-index: 10;
   top: 60px;
@@ -49,6 +50,8 @@ header .header-content .logo {
   gap: 8px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   justify-content: none;
 }
 header .header-content .logo i {
@@ -96,7 +99,7 @@ header .header-content .header-items ul .accueil {
 }
 
 section .salamacontrol {
-  background-image: url(../../Images/);
+  background-image: url(../../Images/fond.jpg);
 }
 section .salamacontrol .salamacontrol-content {
   width: 70%;
@@ -123,9 +126,7 @@ section .salamacontrol .salamacontrol-content p i {
 .fonctionnalite {
   width: 70%;
   margin: auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
+  padding: 10px;
 }
 .fonctionnalite h3 {
   color: var(--deepgreen);
@@ -242,6 +243,7 @@ footer .footer-content {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  justify-content: space-between;
 }
 footer .footer-content div a {
   color: var(--white);
@@ -324,8 +326,6 @@ form .formulaire {
 }
 form .formulaire div {
   width: 100%;
-  display: flex;
-  flex-direction: row;
 }
 form .formulaire div label {
   font-weight: bolder;

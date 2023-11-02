@@ -58,7 +58,6 @@ form{
         margin-top: 10px;
         div{
             width: 100%;
-            @include display-grid;
             label{
                 font-weight: bolder;
             }
