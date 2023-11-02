@@ -116,8 +116,7 @@ section{
     width: 70%;
     margin: auto;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
+    @include display-grid;
     h3{
         color: var(--deepgreen);
     }
@@ -231,10 +230,8 @@ footer{
     padding: 15px 25px;
     background-color: var(--deepgreen);
     .footer-content{
-        display: flex;
-        align-items: center;
         color: var(--white);
-        justify-content: space-between;
+        @include display-flex;
         div{
             a{
                 color: var(--white);
