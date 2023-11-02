@@ -96,27 +96,28 @@ header .header-content .menu .menu-container {
   top: 70px;
   right: 1px;
   width: 100%;
-  height: 50vh;
   transition: 1s;
   margin-top: -200%;
-  z-index: 5;
   background-color: var(--deepgreen);
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+}
+header .header-content .menu .menu-container ul {
+  width: 100%;
 }
 header .header-content .menu .menu-container ul li {
   list-style: none;
-  margin-bottom: 25px;
   color: var(--deepgreen);
-  padding: 8px 12px;
-  border: 1px solid var(--yellow);
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid var(--yellow);
 }
 header .header-content .menu .menu-container ul li a {
   color: var(--white);
   text-decoration: none;
+}
+header .header-content .menu .menu-container ul li a:hover {
+  color: var(--yellow);
 }
 
 .cover-page {

@@ -6,6 +6,11 @@ menu.addEventListener('click', () =>{
     exit.classList.toggle('menu-mobile');
 })
 
+document.querySelectorAll('.nav-links').forEach(n => n.addEventListener('click', () =>{
+    menu.classList.remove('menu-mobile');
+    exit.classList.remove('menu-mobile');
+}))
+
 const scroll = document.querySelector('.top');
 scroll.addEventListener('click', () =>{
     window.scrollTo({
