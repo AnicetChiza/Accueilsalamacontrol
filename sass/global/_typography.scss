@@ -58,6 +58,7 @@ form{
         margin-top: 10px;
         div{
             width: 100%;
+            @include display-grid;
             label{
                 font-weight: bolder;
             }
@@ -68,7 +69,7 @@ form{
         }
     }
     .textarea{
-        gap: 20px;
+        gap: 10px;
         margin-top: 10px;
         @include display-grid;
         input, textarea{

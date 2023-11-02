@@ -111,8 +111,10 @@ section .salamacontrol .salamacontrol-content h3 {
 }
 section .salamacontrol .salamacontrol-content h4 {
   width: 130px;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-bottom: 3px solid var(--yellow);
+  margin-bottom: 0px;
 }
 section .salamacontrol .salamacontrol-content p {
   margin-top: 10px;
@@ -126,7 +128,7 @@ section .salamacontrol .salamacontrol-content p i {
 .fonctionnalite {
   width: 70%;
   margin: auto;
-  padding: 10px;
+  padding: 20px;
 }
 .fonctionnalite h3 {
   color: var(--deepgreen);
@@ -156,19 +158,20 @@ section .salamacontrol .salamacontrol-content p i {
 }
 
 .avantages {
-  padding: 20px;
   background-color: var(--gray);
 }
 .avantages .avantages-items {
   width: 70%;
   margin: auto;
+  padding: 20px;
 }
 .avantages .avantages-items h3 {
   color: var(--deepgreen);
 }
 .avantages .avantages-items h4 {
   width: 130px;
-  margin-top: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-bottom: 3px solid var(--yellow);
 }
 .avantages .avantages-items .avantages-content {
@@ -261,8 +264,6 @@ footer .top {
   justify-content: center;
   justify-content: none;
   gap: 5px;
-  width: -moz-fit-content;
-  width: fit-content;
   padding: 10px 10px;
   color: var(--white);
   position: fixed;
@@ -326,6 +327,8 @@ form .formulaire {
 }
 form .formulaire div {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 form .formulaire div label {
   font-weight: bolder;
@@ -340,10 +343,10 @@ form .formulaire div input {
   font-family: "Montserrat", sans-serif;
 }
 form .textarea {
-  gap: 20px;
+  gap: 10px;
   margin-top: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 form .textarea input, form .textarea textarea {
   border: none;

@@ -89,16 +89,14 @@ section{
     .salamacontrol{
         background-image: url(../../Images/fond.jpg);
         .salamacontrol-content{
-            width: 70%;
-            margin: auto;
-            padding: 20px;
+            @include placement-div;
             h3{
                 color: var(--deepgreen);
             }
             h4{
                 width: 130px;
-                margin-top: 5px;
-                border-bottom: 3px solid var(--yellow);
+                @include title;
+                margin-bottom: 0px;
             }
             p{
                 margin-top: 10px;
@@ -113,17 +111,13 @@ section{
 }
 //Les fonctionalites de Salama Control
 .fonctionnalite{
-    width: 70%;
-    margin: auto;
-    padding: 10px;
+    @include placement-div;
     h3{
         color: var(--deepgreen);
     }
     h4{
         width: 80px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        border-bottom: 3px solid var(--yellow);
+        @include title;
     }
     .fontionnalite-content{
         display: grid;
@@ -145,18 +139,15 @@ section{
 }
 //Les avantages de Salama Control
 .avantages{
-    padding: 20px;
     background-color: var(--gray);
     .avantages-items{
-        width: 70%;
-        margin: auto;
+        @include placement-div;
         h3{
             color: var(--deepgreen);
         }
         h4{
             width: 130px;
-            margin-top: 8px;
-            border-bottom: 3px solid var(--yellow);
+            @include title;
         }
         .avantages-content{
             margin-top: 10px;
@@ -173,17 +164,13 @@ section{
 }
 //Contactez-nous
 .contact{
-    width: 70%;
-    margin: auto;
-    padding: 20px;
+    @include placement-div;
     h3{
         color: var(--deepgreen);
     }
     h4{
         width: 80px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        border-bottom: 3px solid var(--yellow);
+        @include title;
     }
 }
 
@@ -191,9 +178,7 @@ section{
 .suggestion{
     background-image: url(../../Images/image.png);
     .suggestion-content{
-        width: 70%;
-        margin: auto;
-        padding: 20px;
+        @include placement-div;
         h3{
             text-align: center;
             color: var(--deepgreen);
@@ -201,9 +186,7 @@ section{
         h4{
             width: 70px;
             margin: auto;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            border-bottom: 3px solid var(--yellow);
+            @include title;
         }
         p{
             text-align: center;
@@ -248,7 +231,6 @@ footer{
         @include display-flex;
         justify-content: none;
         gap: 5px;
-        width: fit-content;
         padding: 10px 10px;
         color: var(--white);
         position: fixed;
