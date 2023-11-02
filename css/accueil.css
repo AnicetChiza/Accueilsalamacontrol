@@ -35,8 +35,9 @@ header .header-content {
   width: 90%;
   padding: 15px;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: fixed;
   z-index: 10;
   top: 60px;
@@ -45,10 +46,10 @@ header .header-content {
   background-color: var(--deepgreen);
 }
 header .header-content .logo {
+  gap: 8px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 8px;
+  justify-content: none;
 }
 header .header-content .logo i {
   padding: 10px;
@@ -81,10 +82,10 @@ header .header-content .header-items ul .accueil {
 
 .cover-page {
   height: 100vh;
+  text-align: center;
   display: flex;
   flex-direction: row;
   align-items: center;
-  text-align: center;
   justify-content: center;
 }
 .cover-page div {
@@ -95,7 +96,7 @@ header .header-content .header-items ul .accueil {
 }
 
 section .salamacontrol {
-  background-image: url(../../Images/image.png);
+  background-image: url(../../Images/);
 }
 section .salamacontrol .salamacontrol-content {
   width: 70%;
@@ -254,6 +255,8 @@ footer .top {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  justify-content: none;
   gap: 5px;
   width: -moz-fit-content;
   width: fit-content;

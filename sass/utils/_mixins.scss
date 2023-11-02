@@ -1,0 +1,13 @@
+//Pour aligner les elements en flex
+@mixin display-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+//***************************
+@mixin display{
+    display: flex;
+    flex-direction: row;
+}

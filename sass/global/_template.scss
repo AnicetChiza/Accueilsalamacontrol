@@ -1,4 +1,5 @@
 @use '../utils/' as u;
+@use '../utils/mixins' as *;
 
 body{
     width: 100%;
@@ -26,9 +27,7 @@ header{
     .header-content{
         width: 90%;
         padding: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include display-flex;
         position: fixed;
         z-index: 10;
         top: 60px;
@@ -36,10 +35,9 @@ header{
         transform: translate(-50%, -50%);
         background-color: var(--deepgreen);
         .logo{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
             gap: 8px;
+            @include display;
+            justify-content: none;
             i{
                 padding: 10px;
                 border-radius: 50%;
@@ -55,8 +53,7 @@ header{
         }
         .header-items{
             ul{
-                display: flex;
-                flex-direction: row;
+                @include display;
                 gap: 15px;
                 a{
                     color: var(--white);
@@ -77,11 +74,8 @@ header{
 //Ce contenu concerne notre page d'accueil
 .cover-page{
     height: 100vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     text-align: center;
-    justify-content: center;
+    @include display-flex;
     div{
         color: var(--white);
         h2, p, button{
@@ -93,7 +87,7 @@ header{
 //Notre section va comporter les contenus de notre systeme Salama Control
 section{
     .salamacontrol{
-        background-image: url(../../Images/image.png);
+        background-image: url(../../Images/);
         .salamacontrol-content{
             width: 70%;
             margin: auto;
@@ -138,8 +132,7 @@ section{
         gap: 15px;
         grid-template-columns: 1fr 1fr;
         div{
-            display: flex;
-            flex-direction: row;
+            @include display;
             gap: 10px;
             span{
                 width: 30px;
@@ -255,9 +248,8 @@ footer{
         }
     }
     .top{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        @include display-flex;
+        justify-content: none;
         gap: 5px;
         width: fit-content;
         padding: 10px 10px;
