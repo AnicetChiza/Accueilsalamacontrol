@@ -68,6 +68,9 @@ header{
                 }
             }
         }
+        .menu{
+            display: none;
+        }
     }
 }
 
@@ -75,6 +78,7 @@ header{
 .cover-page{
     height: 100vh;
     text-align: center;
+    padding: 20px;
     @include display-flex;
     div{
         color: var(--white);
