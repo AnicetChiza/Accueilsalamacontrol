@@ -197,6 +197,7 @@ section{
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 10px;
+            -webkit-column-gap: 10px;
             p{
                 padding: 10px;
                 border-radius: 10px;
@@ -274,6 +275,7 @@ footer{
         @include display-flex;
         justify-content: none;
         gap: 5px;
+        -webkit-column-gap: 5px;
         padding: 10px 10px;
         color: var(--white);
         position: fixed;
