@@ -70,6 +70,7 @@
         .formulaire{
             @include display-grid;
             gap: 8px;
+            -webkit-column-gap: 8px;
         }
     }
     .avantages{
@@ -84,6 +85,7 @@
         .footer-content{
             @include display-grid;
             gap: 10px;
+            -webkit-column-gap: 10px;
         }
     }
 
@@ -92,6 +94,7 @@
             div{
                 @include display-grid;
                 gap: 0;
+                -webkit-column-gap: 0;
             }
         }
 
